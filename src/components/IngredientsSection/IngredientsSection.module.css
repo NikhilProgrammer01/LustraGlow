@@ -1,0 +1,38 @@
+/* Ingredients Section */
+.ingredientsSection {
+    background-color: #fdf6f0;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="%23fdf6f0"/><path d="M0 0L100 100" stroke="%23f4ebe4" stroke-width="1"/><path d="M100 0L0 100" stroke="%23f4ebe4" stroke-width="1"/></svg>');
+    background-size: 20px 20px;
+    padding: 80px 0;
+    position: relative;
+  }
+  
+  .sectionTitle {
+    color: #2c1810;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Cormorant, serif;
+    font-size: 64px;
+    line-height: 96px;
+  }
+  
+  @media (width<=640px) {
+    .sectionTitle {
+      font-size: 42px;
+      line-height: 52px;
+    }
+  }
+  
+  .ingredientsGrid {
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .ingredientsGrid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

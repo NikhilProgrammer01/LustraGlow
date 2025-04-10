@@ -1,0 +1,129 @@
+/* Process Section */
+.processSection {
+    background-color: #fdf6f0;
+    padding: 100px 0;
+    overflow: hidden;
+  }
+  
+  .sectionTitle {
+    color: #2c1810;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Cormorant, serif;
+    font-size: 64px;
+    line-height: 96px;
+  }
+  
+  @media (width<=640px) {
+    .sectionTitle {
+      font-size: 42px;
+      line-height: 52px;
+    }
+  }
+  
+  .processHeader {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    padding: 0 60px;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .processHeader {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .processHeaderItem {
+    max-width: 200px;
+  }
+  
+  @media (width<=991px) {
+    .processHeaderItem {
+      margin: 20px 0;
+    }
+  }
+  
+  .processHeaderTitle {
+    color: #000;
+    font-family: Cormorant, serif;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+  }
+  
+  .processHeaderDescription {
+    color: #000;
+    margin-top: 5px;
+    font-family: Cormorant, serif;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  
+  .processGallery {
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+    perspective: 1000px;
+  }
+  
+  @media (width<=991px) {
+    .processGallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .processImageContainer {
+    background-color: #d9d9d9;
+    background-image: url("https://images.unsplash.com/photo-1620295428749-180d0c65ba11?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .processImageContainer:hover {
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (width<=640px) {
+    .processImageContainer {
+      width: 90%;
+      height: 400px;
+    }
+  }
+  
+  .processImageCaption {
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1;
+  }
+  
+  .processImageTitle {
+    font-family: Cormorant, serif;
+    font-size: 28px;
+    line-height: 42px;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .processImageDescription {
+    /* color: #000; */
+    margin-top: 10px;
+    font-family: Cormorant, serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  

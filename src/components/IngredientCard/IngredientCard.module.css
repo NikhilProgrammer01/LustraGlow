@@ -1,0 +1,98 @@
+.ingredientCard {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .ingredientCard:hover {
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (width<=640px) {
+    .ingredientCard {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+  .ingredientImageContainer {
+    background-color: #f4ebe4;
+    border-radius: 12px;
+    width: 360px;
+    height: 360px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @media (width<=640px) {
+    .ingredientImageContainer {
+      width: calc(100% - 40px);
+      height: 300px;
+    }
+  }
+  
+  .ingredientImage {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 100%, #fff 0%);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+  }
+  
+  .circleSmall {
+    border: 1px solid #e8d1c5;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    transition: transform 0.5s ease;
+  }
+  
+  .ingredientCard:hover .circleSmall {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  .circleLarge {
+    border: 1px solid #e8d1c5;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    transition: transform 0.5s ease;
+  }
+  
+  .ingredientCard:hover .circleLarge {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  
+  .ingredientTitle {
+    color: #2c1810;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Cormorant, serif;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  
+  .ingredientDescription {
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Cormorant, serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  

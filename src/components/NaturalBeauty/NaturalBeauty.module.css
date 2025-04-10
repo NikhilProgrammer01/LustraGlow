@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    max-width: 1272px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  @media (width<=991px) {
+    .container {
+      max-width: 991px;
+    }
+  }
+  @media (width<=640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
