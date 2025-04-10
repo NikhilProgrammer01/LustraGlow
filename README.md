@@ -1,6 +1,3 @@
-Nice! Here's the updated README with everything you just shared — including your custom Figma design mention, animation flow, and live demo link:
-
----
 
 # ✨ LustraGlow - Animated Landing Page
 
